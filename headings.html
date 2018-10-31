@@ -4,16 +4,8 @@
         <title>My Web Page!</title>
     </head>
     <body>
-        <h1>This is the largest headline</h1>
-        <h2>This is also a large headline</h2>
-        <h3>This is a slightly smaller headline</h3>
-        <h4>This is an even smaller headline</h4>
-        <h5>This is the second-smallest headline</h5>
-        <h6>This is the smallest headline</h6>
 
         <!-- This slide is going to be used as my class notes, listing all commands and tools thsat are documtented in the edx lecture material--->
-
-
 
 <h1>Git Commands</h1>
 
@@ -34,6 +26,9 @@
         background-color: lightgray;
     }
 </style>
+
+<h4>When combining different versions of code, e.g. using git pull, a merge conflict can occur if the different versions have different data in the same location. Git will try to take care of merging automatically, but if two users edit, for example, the same line, a merge conflict will have to be manually resolved.
+To resolve a merge conflict, simply locally remove all lines and code that are not wanted and push the results.</h4>
 
 <table>
     <tr>
@@ -90,11 +85,50 @@
           <td>eset the repository to its original state (e.g. the version cloned from GitHub)</td>
       </tr>
 
-      <h4>When combining different versions of code, e.g. using git pull, a merge conflict can occur if the different versions have different data in the same location. Git will try to take care of merging automatically, but if two users edit, for example, the same line, a merge conflict will have to be manually resolved.
-To resolve a merge conflict, simply locally remove all lines and code that are not wanted and push the results.</h4>
+</table>
 
+
+<br>
+
+<h1>More Git Features</h1>
+
+<p>‘Branching’ is a feature of Git that allows a project to move in multiple different directions simultaneously. There is one master branch that is always usable, but any number of new branches can be created to develop new features. Once ready, these branches can then be merged back into master.</p>
+
+<p>When working in a Git repository, HEAD refers to the current branch being worked on. When a different branch is ‘checked out’, the HEAD changes to indicate the new working branch.</p>
+
+<p>When merging a branch back into master, there is the possibility for merge conflicts to arise. These can be resolved in the same way discussed in Lecture 0.</p>
+
+<p>Some Git commands related to branching:</p>
+
+<table>
+
+  <tr>
+      <th>Command</th>
+      <th>Description</th>
+  </tr>
+  <tr>
+      <td>git branch</td>
+      <td>list all the branches currently in a repository</td>
+  </tr>
+  <tr>
+      <td>git branch (name)</td>
+      <td>create a new branch called name</td>
+
+  </tr>
+  <tr>
+      <td>git checkout (name)</td>
+      <td>switch current working branch to name</td>
+
+  </tr>
+  <tr>
+      <td>git merge (name)</td>
+      <td>merge branch name into current working branch (normally master)</td>
+
+  </tr>
+  <tr>
 
 </table>
+
 
 <h1>CSS</h1>
 <h4>CSS (Cascading Style Sheets) is a language used to interact with and style HTML, changing the way it looks according to a series of rules. CSS is what makes websites look nice.
@@ -106,6 +140,9 @@ The <style></style> tags: ```html
 
 A separate .css file: add <link rel="stylesheet" href="path/to/styles.css"> to the header, and move the CSS code (same format as used inside the <style></style> tags.
 This is often an even better paradigm because it separates two distinctly different things: structure (HTML) and style (CSS), while also being easier to manage and read.</h4>
+
+</br>
+<br>
 
 <table>
     <tr>
@@ -129,3 +166,7 @@ This is often an even better paradigm because it separates two distinctly differ
 
     </body>
 </html>
+
+<br>
+
+<h1></h1>
