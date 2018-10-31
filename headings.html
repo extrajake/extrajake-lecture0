@@ -7,9 +7,19 @@
 
         <!-- This slide is going to be used as my class notes, listing all commands and tools thsat are documtented in the edx lecture material--->
 
+<div class="container">
+
 <h1>Git Commands</h1>
 
 <style>
+
+    .container{
+        margin:10px;
+        padding:40px;
+        background-color: #f4f4f4;
+        border-radius: 10px;
+
+    }
     table {
         border: 2px solid black;
         border-collapse: collapse;
@@ -26,6 +36,7 @@
         background-color: lightgray;
     }
 </style>
+
 
 <h4>When combining different versions of code, e.g. using git pull, a merge conflict can occur if the different versions have different data in the same location. Git will try to take care of merging automatically, but if two users edit, for example, the same line, a merge conflict will have to be manually resolved.
 To resolve a merge conflict, simply locally remove all lines and code that are not wanted and push the results.</h4>
@@ -129,6 +140,30 @@ To resolve a merge conflict, simply locally remove all lines and code that are n
 
 </table>
 
+<br>
+
+<p>Any version of a repository that is not stored locally on a device is called a ‘remote’. ‘Origin’ is used to refer to the remote from which the local repository was originally downloaded from.</p>
+
+<p>Some Git commands related to remotes:</p>
+
+<table>
+  <tr>
+    <th>Commands</th>
+    <th>Description</th>
+  </tr>
+
+  <tr>
+    <td>git fetch</td>
+    <td>download all of the latest commits from a remote to a local device</td>
+  </tr>
+
+  <tr>
+    <td>git merge origin/master</td>
+    <td>merge origin/master, which is the remote version of a repository normally downloaded with git fetch, into the local, preexesiting master branch (Note that git pull is equivalent to running git fetch and then git merge origin/master)</td>
+  </tr>
+
+</table>
+
 
 <h1>CSS</h1>
 <h4>CSS (Cascading Style Sheets) is a language used to interact with and style HTML, changing the way it looks according to a series of rules. CSS is what makes websites look nice.
@@ -163,6 +198,8 @@ This is often an even better paradigm because it separates two distinctly differ
         <td>take a repository stored on a server (like GitHub) and downloads it</td>
     </tr>
 </table>
+
+</div>
 
     </body>
 </html>
