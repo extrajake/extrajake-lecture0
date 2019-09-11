@@ -215,43 +215,62 @@ This is often an even better paradigm because it separates two distinctly differ
 <h3>CSS selectors are used to select different parts of a website to style in particular ways.
 Some common CSS selectors:</h3>
 
-<p>Select all <code>input</code> fields with the attribute <code>type=text</code></p>
 
-<code>
-  input[type=text] {
-  background-color: red;
-}
-</code>
-
-<p>Select all <code>buttons</code> with the pseudoclass <code>hover</code></p>
-
-<code>
-  button:hover {
-      background-color: orange;
-  }
-</code>
-<p>Select all <code>before</code> pseudoelements of the element a</p>
-<p>A ‘pseudoclass’ is a special state of an HTML element. In this example, the state is whether or not the cursor is hovering over a button.</p>
-<code>
-  a::before {
-      content: "\21d2 Click here: ";
-      font-weight: bold;
-  }
-</code>
-
-</br>
-</br>
 <h3>A ‘pseudoelement’ is a way to affect certain parts of an HTML element. In this example, the <code>before</code> selector applies <code>content</code> with its included styling before the contents of all <code>a</code> elements.
 <code>\21d2</code> is a hexadecimal value for a Unicode icon, which can represent symbols like emoji.</h3>
 
-<p>Select all <code>selection</code> pseudoelements of the element <code>p</code></p>
+</br>
 
-<code>  p::selection {
-      color: red;
-      background-color: yellow;
+<table>
+
+  <tr>
+      <th>Command</th>
+      <th>Description</th>
+  </tr>
+
+    <tr>
+        <td><p>Select all <code>input</code> fields with the attribute <code>type=text</code></p></td>
+        <td><code>
+          input[type=text] {
+          background-color: red;
+        }
+      </code></td>
+    </tr>
+    <tr>
+        <td><p>Select all <code>buttons</code> with the pseudoclass <code>hover</code></p></td>
+        <td><code>
+          button:hover {
+              background-color: orange;
+          }
+        </code></td>
+    </tr>
+    <tr>
+        <td><p>Select all <code>buttons</code> with the pseudoclass <code>hover</code></p></td>
+        <td><code>
+          a::before {
+              content: "\21d2 Click here: ";
+              font-weight: bold;
+          }
+        </code></td>
+
+    </tr>
+    <tr>
+        <td><p>Select all <code>selection</code> pseudoelements of the element <code>p</code></p></td>
+        <td><code>  p::selection {
+              color: red;
+              background-color: yellow;
+          }
+        </code></td>
+    </tr>
+</table>
+
+
+<style>
+  code {
+    font-size: 16px;
   }
-</code>
 
+</style>
 
 </div>
 
